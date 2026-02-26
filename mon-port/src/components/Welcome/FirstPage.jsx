@@ -1,8 +1,13 @@
-import { Box, Button, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Box, Typography } from "@mui/material";
+import { useRef, useEffect } from "react";
+import Bouton from "./Bouton";
 
-function FirstPage() {
-	const navigate = useNavigate();
+export default function FirstPage() {
+	const videoRef = useRef(null);
+
+	useEffect(() => {
+		videoRef.current?.play();
+	}, []);
 
 	return (
 		<Box
@@ -10,44 +15,85 @@ function FirstPage() {
 				position: "relative",
 				minHeight: "100vh",
 				display: "flex",
-				flexDirection: "column",
-				justifyContent: "center",
 				alignItems: "center",
+				justifyContent: "center",
 				textAlign: "center",
-				gap: 4,
 				overflow: "hidden",
+				px: 2,
 			}}
 		>
+			{/* VIDEO */}
 			<video
+				ref={videoRef}
 				autoPlay
 				muted
-				loop
 				playsInline
 				style={{
 					position: "absolute",
-					top: 0,
-					left: 0,
+					inset: 0,
 					width: "100%",
 					height: "100%",
 					objectFit: "cover",
 					zIndex: -2,
 				}}
-				// onEnded pour ne pas avoir de pause entre chaque coupure
+				onEnded={() => {
+					videoRef.current.currentTime = 0;
+					videoRef.current.play();
+				}}
 			>
 				<source src="/video1.webm" type="video/webm" />
 			</video>
 
-			<Typography variant="h2" sx={{ fontWeight: 700, color: "white" }}>
-				Welcome to my Portfolio !
-			</Typography>
+			{/* OVERLAY PRO */}
+			<Box
+				sx={{
+					position: "absolute",
+					inset: 0,
+					background:
+						"linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.75))",
+					zIndex: -1,
+				}}
+			/>
 
-			<Typography variant="h4" sx={{ color: "white" }}>
-				Let's be creative together
-			</Typography>
+			{/* HERO CONTENT */}
+			<Box
+				sx={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center",
+					gap: 3,
+					maxWidth: 700,
+					animation: "fadeUp 1.2s ease forwards",
+					opacity: 0,
+					transform: "translateY(30px)",
+					"@keyframes fadeUp": {
+						to: { opacity: 1, transform: "translateY(0)" },
+					},
+				}}
+			>
+				<Typography
+					variant="h2"
+					sx={{
+						fontWeight: 700,
+						color: "#e3e1cf",
+						letterSpacing: "-0.02em",
+					}}
+				>
+					Welcome to my Portfolio
+				</Typography>
 
-			
+				<Typography
+					variant="h5"
+					sx={{
+						color: "#e3e1cf",
+						fontWeight: 300,
+					}}
+				>
+					Petite phrase ici sdcagzekhc ushdzi hbsbzzj
+				</Typography>
+
+				<Bouton />
+			</Box>
 		</Box>
 	);
 }
-
-export default FirstPage;

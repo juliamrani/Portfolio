@@ -1,9 +1,7 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -12,16 +10,25 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Projects'];
 
-function DrawerAppBar(props) {
-	const { window } = props;
+function NavBar(props) {
+	const { window: WindowProp } = props;
 	const [mobileOpen, setMobileOpen] = React.useState(false);
+	const [scrolled, setScrolled] = React.useState(false);
+
+	React.useEffect(() => {
+		const handleScroll = () => {
+			setScrolled(window.scrollY > 10);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	const handleDrawerToggle = () => {
 		setMobileOpen((prevState) => !prevState);
@@ -29,10 +36,6 @@ function DrawerAppBar(props) {
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-			<Typography variant="h6" sx={{ my: 2 }}>
-				MUI
-			</Typography>
-			<Divider />
 			<List>
 				{navItems.map((item) => (
 					<ListItem key={item} disablePadding>
@@ -45,25 +48,31 @@ function DrawerAppBar(props) {
 		</Box>
 	);
 
-	const container = window !== undefined ? () => window().document.body : undefined;
+	const container = WindowProp !== undefined ? () => window().document.body : undefined;
 
 	return (
 		<Box sx={{ display: 'flex' }}>
 			<CssBaseline />
+
 			<AppBar
 				component="nav"
-				elevation={1}
+				elevation={scrolled ? 0 : 1}
 				sx={{
-					backgroundColor: 'rgba(228, 137, 226, 0.3)',
-					backdropFilter: 'blur(12px)',
-					WebkitBackdropFilter: 'blur(12px)',
-					borderBottom: '1px solid rgba(255,255,255,0.1)',
+					backgroundColor: scrolled
+						? "rgba(255,255,255,0.6)"
+						: "#ccc8ab",
+					backdropFilter: scrolled ? "blur(12px)" : "none",
+					WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
+					color: "#111",
+					borderBottom: scrolled
+						? "1px solid rgba(0,0,0,0.08)"
+						: "1px solid rgba(0,0,0,0.12)",
+					transition: "all 0.35s ease",
 				}}
 			>
 				<Toolbar>
 					<IconButton
 						color="inherit"
-						aria-label="open drawer"
 						edge="start"
 						onClick={handleDrawerToggle}
 						sx={{ mr: 2, display: { sm: 'none' } }}
@@ -73,7 +82,7 @@ function DrawerAppBar(props) {
 
 					<Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
 						{navItems.map((item) => (
-							<Button key={item} sx={{ color: '#fff' }}>
+							<Button key={item} sx={{ color: '#111', borderRadius: "14px", }}>
 								{item}
 							</Button>
 						))}
@@ -81,32 +90,32 @@ function DrawerAppBar(props) {
 
 					<Box sx={{ flexGrow: 1 }} />
 
-					{/* ICÔNE À DROITE */}
 					<IconButton color="inherit">
 						<LightModeIcon />
 					</IconButton>
 				</Toolbar>
 			</AppBar>
+
 			<nav>
 				<Drawer
 					container={container}
 					variant="temporary"
 					open={mobileOpen}
 					onClose={handleDrawerToggle}
-					ModalProps={{
-						keepMounted: true, // Better open performance on mobile.
-					}}
+					ModalProps={{ keepMounted: true }}
 					sx={{
 						display: { xs: 'block', sm: 'none' },
-						'& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+						'& .MuiDrawer-paper': {
+							boxSizing: 'border-box',
+							width: drawerWidth
+						},
 					}}
 				>
 					{drawer}
 				</Drawer>
 			</nav>
-			
 		</Box>
 	);
 }
 
-export default DrawerAppBar;
+export default NavBar;
