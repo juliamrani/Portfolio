@@ -22,7 +22,7 @@ export default function FirstPage() {
 				px: 2,
 			}}
 		>
-			{/* VIDEO */}
+
 			<video
 				ref={videoRef}
 				autoPlay
@@ -44,18 +44,6 @@ export default function FirstPage() {
 				<source src="/video1.webm" type="video/webm" />
 			</video>
 
-			{/* OVERLAY PRO */}
-			<Box
-				sx={{
-					position: "absolute",
-					inset: 0,
-					background:
-						"linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.75))",
-					zIndex: -1,
-				}}
-			/>
-
-			{/* HERO CONTENT */}
 			<Box
 				sx={{
 					display: "flex",
@@ -77,6 +65,11 @@ export default function FirstPage() {
 						fontWeight: 700,
 						color: "#e3e1cf",
 						letterSpacing: "-0.02em",
+						fontSize: {
+							xs: "2.2rem",
+							sm: "2.8rem",
+							md: "3.75rem"
+						}
 					}}
 				>
 					Welcome to my Portfolio
@@ -87,6 +80,11 @@ export default function FirstPage() {
 					sx={{
 						color: "#e3e1cf",
 						fontWeight: 300,
+						fontSize: {
+							xs: "1.2rem",
+							sm: "1.5rem",
+							md: "2rem"
+						}
 					}}
 				>
 					Petite phrase ici sdcagzekhc ushdzi hbsbzzj

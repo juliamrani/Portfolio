@@ -1,15 +1,19 @@
-import { Box } from "@mui/material";
+import { Box, Toolbar } from "@mui/material";
 import Navbar from "../components/Second/Navbar.jsx";
+import Home from "../components/Second/Home/Home.jsx";
+
 
 export default function Second() {
 	return (
 		<Box
 			sx={{
 				minHeight: "100vh",
-				background: "#e3e1cf",
+				background: "linear-gradient(to right, #3F6F7C, #1F4E5F)",
 			}}
 		>
-			<Navbar />
+			<Navbar/>
+			<Toolbar/>
+			<Home/>
 		</Box>
 	);
 }

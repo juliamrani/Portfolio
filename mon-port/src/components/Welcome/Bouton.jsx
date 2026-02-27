@@ -15,6 +15,11 @@ export default function Bouton() {
 				borderRadius: "14px",
 				textTransform: "none",
 				fontWeight: 500,
+				fontSize: {
+					xs: "0.9rem",
+					sm: "1.08rem",
+					md: "1.2rem"
+				},
 				background: "rgba(255,255,255,0.12)",
 				backdropFilter: "blur(10px)",
 				border: "1px solid rgba(255,255,255,0.25)",

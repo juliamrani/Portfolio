@@ -14,9 +14,9 @@ import Button from '@mui/material/Button';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects'];
+const navItems = ['Home', 'About', 'Projects', 'Contact'];
 
-function NavBar(props) {
+export default function NavBar(props) {
 	const { window: WindowProp } = props;
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 	const [scrolled, setScrolled] = React.useState(false);
@@ -60,7 +60,7 @@ function NavBar(props) {
 				sx={{
 					backgroundColor: scrolled
 						? "rgba(255,255,255,0.6)"
-						: "#ccc8ab",
+						: "#759898",
 					backdropFilter: scrolled ? "blur(12px)" : "none",
 					WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
 					color: "#111",
@@ -118,4 +118,3 @@ function NavBar(props) {
 	);
 }
 
-export default NavBar;
