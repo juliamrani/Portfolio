@@ -41,7 +41,7 @@ export default function FirstPage() {
 					videoRef.current.play();
 				}}
 			>
-				<source src="/video1.webm" type="video/webm" />
+				<source src="src/assets/video1.webm" type="video/webm" />
 			</video>
 
 			<Box

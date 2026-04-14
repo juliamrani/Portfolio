@@ -60,7 +60,7 @@ export default function NavBar(props) {
 				sx={{
 					backgroundColor: scrolled
 						? "rgba(255,255,255,0.6)"
-						: "#759898",
+						: "#b7b39c",
 					backdropFilter: scrolled ? "blur(12px)" : "none",
 					WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
 					color: "#111",
