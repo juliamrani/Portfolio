@@ -30,7 +30,7 @@ export default function About() {
 		<Box
 			sx={{
 				//background: "linear-gradient(to right, #123944, #264d58)",
-				background: "linear-gradient(to bottom, #e3dfca, #b7c5c4)",
+				//background: "linear-gradient(to bottom, #e3dfca, #b7c5c4)",
 			}}>
 			<Typography
 				//variant="h2"
@@ -83,7 +83,7 @@ export default function About() {
 								</Grid>
 							</Grid>
 			
-			{/*Academic*/}
+{/*Academic*/}
 							<Box mt={16}>
 								<Typography
 								sx={{
@@ -145,7 +145,7 @@ export default function About() {
 								</Grid>
 							</Box>
 			
-			{/*Pro*/}
+{/*Pro*/}
 							<Box mt={16}>
 								<Typography
 								sx={{
@@ -198,7 +198,7 @@ export default function About() {
 								</Grid>
 							</Box>
 			
-			{/*Skills*/}
+{/*Skills*/}
 							<Box mt={16}>
 								<Typography
 								sx={{

@@ -22,7 +22,14 @@ export default function FirstPage() {
 				px: 2,
 			}}
 		>
-
+			<Box
+				sx={{
+				position: "absolute",
+				inset: 0,
+				background: "linear-gradient(rgba(10,42,51,0.6), rgba(10,42,51,0.8))"
+				}}
+			/>
+			
 			<video
 				ref={videoRef}
 				autoPlay

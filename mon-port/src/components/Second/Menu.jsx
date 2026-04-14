@@ -11,7 +11,7 @@ export default function Menu () {
 			sx={{
 				display: "flex",
 				zIndex: 2,
-				background: "#e3dfca"
+				//background: "#e3dfca"
 			}}
 		>
 			<Box
