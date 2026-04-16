@@ -200,6 +200,10 @@
   },
   "active": "87fbad55a53cbd3b",
   "lastOpenFiles": [
+    "mon-port/src/assets/PhotoHome.jpg",
+    "mon-port/src/components/Second/Noise.jsx",
+    "mon-port/src/assets/papier2.jpg",
+    "mon-port/src/assets/papier1.jpg",
     "mon-port/src/components/Second/Menu.jsx",
     "mon-port/src/components/Welcome/FirstPage.jsx",
     "mon-port/src/components/Welcome/Bouton.jsx",
@@ -218,10 +222,6 @@
     "mon-port/src/assets/mer2.jpeg",
     "mon-port/src/assets/mer1.jpeg",
     "mon-port/src/assets/mer.jpeg",
-    "mon-port/src/assets/etoile.png",
-    "mon-port/src/assets/video1.webm",
-    "mon-port/public/video1.webm",
-    "mon-port/src/assets/mer4.jpeg",
-    "mon-port/src/assets/Picv1.png"
+    "mon-port/src/assets/etoile.png"
   ]
 }

@@ -10,7 +10,8 @@ export default function Second() {
 		<Box 
 			sx={{
 				//background: "linear-gradient(to right, #123944, #264d58)",
-				background: "linear-gradient(to bottom, #efe7c2, #6a91a4, #639390)",
+				//background: "linear-gradient(to bottom, #efe7c2, #6a91a4, #639390)",
+				
 			}}
 		>
 			<Home/>

@@ -1,4 +1,5 @@
 import { Box, Typography, Container, Grid, Paper, Chip } from "@mui/material";
+import Photo2 from "/src/assets/Photo2.png";
 
 const sand = "#F4EDE4";
 const ocean = "#133d49";
@@ -59,12 +60,28 @@ export default function About() {
 			
 								<Grid item xs={12} md={8}
 								sx={{
-										display: "flex",
-										justifyContent: "center",
-		
-										textAlign: "center"
+									display: "flex",
+									alignItems: "center",
+									justifyContent: "space-between",
+									py: 19,
+									px: 8,
+									gap: 6,
+									flexDirection: "column",
+									"@media (min-width:816px)": {
+										flexDirection: "row"
+									}
 									}}
 								>
+
+									<Box
+										component="img"
+										src={Photo2}
+										sx={{
+											width: { xs: 180, sm: 220, md: 280 },
+											borderRadius: "20px",
+											boxShadow: "0 15px 40px rgba(0,0,0,0.5)"
+										}}
+									/>
 			
 									<Typography
 									sx={{
@@ -90,13 +107,12 @@ export default function About() {
 									//fontWeight: 700,
 									color: ocean,
 									fontSize: {
-									xs: "1.5rem",
-									sm: "2rem",
-									md: "2.2rem"
+									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}
 								}}
 								>
-									Academic Background</Typography>
+									Academic Background
+								</Typography>
 			
 								<Grid container spacing={4} mt={4}>
 									<Grid item xs={12} md={6}>
@@ -152,9 +168,7 @@ export default function About() {
 									//fontWeight: 700,
 									color: ocean,
 									fontSize: {
-									xs: "2.6rem",
-									sm: "3rem",
-									md: "3.2rem"
+									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}
 								}}
 								>
@@ -205,9 +219,7 @@ export default function About() {
 									//fontWeight: 700,
 									color: ocean,
 									fontSize: {
-									xs: "2.6rem",
-									sm: "3rem",
-									md: "3.2rem"
+									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}
 								}}
 								>

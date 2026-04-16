@@ -10,6 +10,7 @@ export default function Menu () {
 		<Box 
 			sx={{
 				display: "flex",
+				justifyContent: "center",
 				zIndex: 2,
 				//background: "#e3dfca"
 			}}
@@ -18,14 +19,14 @@ export default function Menu () {
 				style={bowlbyFont}
 				sx={{
 					display: "flex",
-					//textAlign: "start",
-					flexDirection: "column",
+					
+					flexDirection: "row",
 					gap: 10,
 					px: 8,
-					py: 48,
+					py: 28,
 				}}
 			>
-				{["About —— ", "Projects ——", "Contact ——"].map((item) => (
+				{["About", "Projects", "Contact"].map((item) => (
 					<Button
 						key={item}
 						sx={{
