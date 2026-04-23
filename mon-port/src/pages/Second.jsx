@@ -7,16 +7,20 @@ import Menu from "../components/Second/Menu";
 
 export default function Second() {
 	return (
-		<Box 
+		<Box>
+			<Home/>
+
+			<Box
 			sx={{
 				//background: "linear-gradient(to right, #123944, #264d58)",
-				//background: "linear-gradient(to bottom, #efe7c2, #6a91a4, #639390)",
+				background: "linear-gradient(to bottom, #f8f4e3, #b5cad4, #8cb8b5)",
 				
 			}}
-		>
-			<Home/>
-			<Menu/>
-			<About/>
+			>
+				<Menu/>
+				<About/>
+			</Box>
+			
 		</Box>
 	);
 }

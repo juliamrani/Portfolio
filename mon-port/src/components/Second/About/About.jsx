@@ -2,8 +2,7 @@ import { Box, Typography, Container, Grid, Paper, Chip } from "@mui/material";
 import Photo2 from "/src/assets/Photo2.png";
 
 const sand = "#F4EDE4";
-const ocean = "#133d49";
-const accent = "#6FA3A9";
+const blue = "#133d49";
 
 
 
@@ -42,10 +41,7 @@ export default function About() {
 					px: 4,
 					color: "#11313a",
 					fontSize: {
-					xs: "2.6rem",
-					sm: "3rem",
-					md: "3.3rem"
-					}
+					xs: "2.6rem", sm: "3rem", md: "3.3rem" }
 				}}
 			>
 				About
@@ -85,7 +81,7 @@ export default function About() {
 			
 									<Typography
 									sx={{
-										color: ocean,
+										color: blue,
 										lineHeight: 1.9,
 										fontSize: "1.05rem",
 										maxWidth: "600px",
@@ -105,7 +101,7 @@ export default function About() {
 								<Typography
 								sx={{
 									//fontWeight: 700,
-									color: ocean,
+									color: blue,
 									fontSize: {
 									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}
@@ -117,7 +113,7 @@ export default function About() {
 								<Grid container spacing={4} mt={4}>
 									<Grid item xs={12} md={6}>
 										<GlassCard>
-											<Typography fontWeight={600} fontSize="1.2rem" color={ocean}>
+											<Typography fontWeight={600} fontSize="1.2rem" color={blue}>
 											EPITECH
 											</Typography>
 											<Typography color="text.secondary">
@@ -140,7 +136,7 @@ export default function About() {
 			
 									<Grid item xs={12} md={6}>
 										<GlassCard>
-											<Typography fontWeight={600} fontSize="1.2rem" color={ocean}>
+											<Typography fontWeight={600} fontSize="1.2rem" color={blue}>
 											University of Rennes 2
 											</Typography>
 											<Typography color="text.secondary">
@@ -166,7 +162,7 @@ export default function About() {
 								<Typography
 								sx={{
 									//fontWeight: 700,
-									color: ocean,
+									color: blue,
 									fontSize: {
 									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}
@@ -178,7 +174,7 @@ export default function About() {
 								<Grid container spacing={4}  mt={4}>
 									<Grid item xs={12} md={6}>
 										<GlassCard>
-											<Typography fontWeight={600} fontSize="1.1rem" color={ocean}>
+											<Typography fontWeight={600} fontSize="1.1rem" color={blue}>
 											Team Member
 											</Typography>
 											<Typography color="text.secondary">
@@ -197,7 +193,7 @@ export default function About() {
 			
 									<Grid item xs={12} md={6}>
 										<GlassCard>
-											<Typography fontWeight={600} fontSize="1.1rem" color={ocean}>
+											<Typography fontWeight={600} fontSize="1.1rem" color={blue}>
 											Seasonal Employee
 											</Typography>
 											<Typography color="text.secondary">
@@ -217,7 +213,7 @@ export default function About() {
 								<Typography
 								sx={{
 									//fontWeight: 700,
-									color: ocean,
+									color: blue,
 									fontSize: {
 									xs: "1.5rem", sm: "2rem", md: "2.2rem"
 									}

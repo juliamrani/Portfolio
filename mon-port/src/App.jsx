@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "@fontsource/roboto"; 
 import Second from './pages/Second.jsx';
 import Welcome from './pages/Welcome.jsx';
+import "./global.css"
 
 function App() {
 

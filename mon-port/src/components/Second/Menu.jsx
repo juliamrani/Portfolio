@@ -11,8 +11,6 @@ export default function Menu () {
 			sx={{
 				display: "flex",
 				justifyContent: "center",
-				zIndex: 2,
-				//background: "#e3dfca"
 			}}
 		>
 			<Box
@@ -20,7 +18,9 @@ export default function Menu () {
 				sx={{
 					display: "flex",
 					
-					flexDirection: "row",
+					flexDirection: "column",
+					"@media (min-width:816px)": {
+						flexDirection: "row"	},
 					gap: 10,
 					px: 8,
 					py: 28,
@@ -33,10 +33,7 @@ export default function Menu () {
 							color: "#133d49",
 							fontWeight: 900,
 							fontSize: {
-							xs: "3.5rem",
-							sm: "4rem",
-							md: "4.5rem"
-							},
+							xs: "3.5rem", sm: "4rem", md: "4.5rem" },
 							textTransform: "none",
 							"&:hover": {
 								background: "rgba(116, 171, 190, 0.6)",

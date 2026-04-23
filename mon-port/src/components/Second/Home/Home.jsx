@@ -1,22 +1,29 @@
 import { Box, Typography, Container, Paper } from "@mui/material";
 import { motion } from "framer-motion";
-import Photo2 from "/src/assets/Photo2.png";
-import PhotoHome from "/src/assets/PhotoHome.jpg"
+import PhotoHome3 from "/src/assets/PhotoHome3.jpg"
 
 export default function Home() {
 	return (
-	<Box
-		sx={{
-			position: "relative",
-			height: "40vh",
-			display: "flex",
-			alignItems: "center",
-			justifyContent: "center",
-			backgroundImage: `url(${PhotoHome})`,
-			backgroundSize: "cover",
-			backgroundPosition: "center",
-		}}
-    >	
+		<Box
+			sx={{
+				position: "relative",
+				height: "50vh",
+				display: "flex",
+				alignItems: "center",
+				justifyContent: "center",
+				backgroundImage: `url(${PhotoHome3})`,
+				backgroundSize: "cover",
+				backgroundPosition: "center",
+			}}
+		>
+
+		<Box
+			sx={{
+			position: "absolute",
+			inset: 0,
+			background: "linear-gradient(rgba(10, 42, 51, 0.1), rgba(10, 42, 51, 0.18))"
+			}}
+		/>
 
 		<Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
 			<Box
@@ -31,7 +38,7 @@ export default function Home() {
 				textAlign: { xs: "center", sm: "left", md: "left" }
 			}}
 			>
-				
+
 			<motion.div
 				initial={{ opacity: 0, x: -80 }}
 				animate={{ opacity: 1, x: 0 }}
@@ -41,8 +48,9 @@ export default function Home() {
 				variant="h1"
 				sx={{
 					fontWeight: 700,
-					color: "#133d49",
-					fontSize: { xs: 45, sm: 50, md: 70 }
+					color: "#000000",
+					fontSize: {
+					xs: "3rem", sm: "3.7rem", md: "4.5rem" },
 				}}
 				>
 				Julia El Amrani
@@ -50,7 +58,7 @@ export default function Home() {
 
 				<Typography
 				sx={{
-					color: "#133d49",
+					color: "#000000",
 					mt: 2,
 					fontSize: { xs: 18, sm: 23, md: 27 },
 					maxWidth: 600
