@@ -6,14 +6,20 @@ export default function Home() {
 	return (
 		<Box
 			sx={{
-				position: "relative",
-				height: "50vh",
-				display: "flex",
-				alignItems: "center",
-				justifyContent: "center",
 				backgroundImage: `url(${PhotoHome3})`,
+				position: "relative",
+				height: "100vh",
+				display: "flex",
+				alignItems: {xs: 'flex-start', md: 'center'},
+				px: {xs: 2, md: 6},
+				pt: {xs: 10, md: 0},
+				justifyContent: "center",
 				backgroundSize: "cover",
-				backgroundPosition: "center",
+				backgroundPosition: { 
+				xs: 'right center',
+				md: 'center center'
+				},
+				backgroundAttachment: "scroll",
 			}}
 		>
 
@@ -34,8 +40,8 @@ export default function Home() {
 				py: 19,
 				px: 8,
 				gap: 6,
-				flexDirection: { xs: "column", sm: "row", md: "row" },
-				textAlign: { xs: "center", sm: "left", md: "left" }
+				flexDirection: {xs: "column", sm: "row", md: "row"},
+				textAlign: {xs: "center", sm: "left", md: "left"}
 			}}
 			>
 

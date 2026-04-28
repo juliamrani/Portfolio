@@ -22,18 +22,18 @@ export default function Menu () {
 					"@media (min-width:816px)": {
 						flexDirection: "row"	},
 					gap: 10,
-					px: 8,
+					px: 2,
 					py: 28,
 				}}
 			>
-				{["About", "Projects", "Contact"].map((item) => (
+				{["About", "Projects", "My vision", "Contact"].map((item) => (
 					<Button
 						key={item}
 						sx={{
 							color: "#133d49",
 							fontWeight: 900,
 							fontSize: {
-							xs: "3.5rem", sm: "4rem", md: "4.5rem" },
+							xs: "2.6rem", sm: "2.8rem", md: "3.3rem" },
 							textTransform: "none",
 							"&:hover": {
 								background: "rgba(116, 171, 190, 0.6)",

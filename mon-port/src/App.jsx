@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "@fontsource/roboto"; 
-import Second from './pages/Second.jsx';
+import General from './pages/General.jsx';
 import Welcome from './pages/Welcome.jsx';
 import "./global.css"
 
@@ -10,7 +10,7 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Welcome />} />
-				<Route path="/second" element={<Second />} />
+				<Route path="/general" element={<General />} />
 			</Routes>
 		</BrowserRouter>
 	)

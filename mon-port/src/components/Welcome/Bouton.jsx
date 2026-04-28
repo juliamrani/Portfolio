@@ -7,7 +7,7 @@ export default function Bouton() {
 	return (
 		<Button
 			variant="contained"
-			onClick={() => navigate("/second")}
+			onClick={() => navigate("/general")}
 			sx={{
 				color: "#e3e1cf",
 				fontSize: "1.2rem",

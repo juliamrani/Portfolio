@@ -1,11 +1,11 @@
 import { Box, Toolbar } from "@mui/material";
-//import Navbar from "../components/Second/Navbar.jsx";
-import Home from "../components/Second/Home/Home.jsx";
-import About from "../components/Second/About/About.jsx";
-import Menu from "../components/Second/Menu";
+//import Navbar from "../components/General/Navbar.jsx";
+import Home from "../components/General/Home/Home.jsx";
+import About from "../components/General/About/About.jsx";
+import Menu from "../components/General/Menu";
 
 
-export default function Second() {
+export default function General() {
 	return (
 		<Box>
 			<Home/>
