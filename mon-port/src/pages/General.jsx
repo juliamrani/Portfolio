@@ -3,6 +3,7 @@ import { Box, Toolbar } from "@mui/material";
 import Home from "../components/General/Home/Home.jsx";
 import About from "../components/General/About/About.jsx";
 import Menu from "../components/General/Menu";
+import Projects from "../components/General/Projects/projects.jsx";
 
 
 export default function General() {
@@ -19,6 +20,7 @@ export default function General() {
 			>
 				<Menu/>
 				<About/>
+				<Projects/>
 			</Box>
 			
 		</Box>

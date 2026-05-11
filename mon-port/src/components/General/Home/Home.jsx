@@ -53,6 +53,7 @@ export default function Home() {
 				<Typography
 				variant="h1"
 				sx={{
+					fontFamily: "'Bungee', cursive",
 					fontWeight: 700,
 					color: "#000000",
 					fontSize: {

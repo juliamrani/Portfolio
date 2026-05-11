@@ -27,21 +27,17 @@ const GlassCard = ({ children }) => (
 
 export default function About() {
 	return (
-		<Box
-			sx={{
-				//background: "linear-gradient(to right, #123944, #264d58)",
-				//background: "linear-gradient(to bottom, #e3dfca, #b7c5c4)",
-			}}>
+		<Box>
 			<Typography
-				//variant="h2"
 				sx={{
 					display: "flex",
 					justifyContent: "center",
+					fontFamily: "Saira Stencil",
 					fontWeight: 700,
 					px: 4,
 					color: "#11313a",
 					fontSize: {
-					xs: "2.6rem", sm: "3rem", md: "3.3rem" }
+					xs: "2.6rem", sm: "3rem", md: "7rem" }
 				}}
 			>
 				About
@@ -50,10 +46,7 @@ export default function About() {
 
 			<Box sx={{ py: 4, }} >
 				<Container >
-			
 					<Grid>
-							
-			
 								<Grid item xs={12} md={8}
 								sx={{
 									display: "flex",

@@ -1,49 +1,60 @@
-import { Box, Button } from "@mui/material";
-//@import url=('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+import { Box, Button, Divider } from "@mui/material";
 
-const bowlbyFont = {
-  fontFamily: "'Bowlby One', cursive"
-};
-
-export default function Menu () {
+export default function Menu() {
 	return (
-		<Box 
+		<Box
 			sx={{
 				display: "flex",
-				justifyContent: "center",
+				flexDirection: "column",
+				overflow: "hidden",
+				px: { xs: 3, sm: 6, md: 10 },
+				py: { xs: 8, sm: 12, md: 16 },
 			}}
 		>
 			<Box
-				style={bowlbyFont}
 				sx={{
 					display: "flex",
-					
 					flexDirection: "column",
-					"@media (min-width:816px)": {
-						flexDirection: "row"	},
-					gap: 10,
-					px: 2,
-					py: 28,
+					alignItems: "flex-start",
+					gap: { xs: 1, sm: 2, md: 3 },
 				}}
 			>
 				{["About", "Projects", "My vision", "Contact"].map((item) => (
-					<Button
-						key={item}
-						sx={{
-							color: "#133d49",
-							fontWeight: 900,
-							fontSize: {
-							xs: "2.6rem", sm: "2.8rem", md: "3.3rem" },
-							textTransform: "none",
-							"&:hover": {
-								background: "rgba(116, 171, 190, 0.6)",
-							},
-						}}
-					>
-						{item}
-					</Button>
+					<Box key={item}>
+						<Button
+							sx={{
+								color: "#133d49",
+								fontFamily: "'Bungee', cursive",
+								fontSize: { xs: "4rem", sm: "6rem", md: "8rem" },
+								lineHeight: 0.92,
+								letterSpacing: "-0.01em",
+								textTransform: "none",
+								whiteSpace: "nowrap",
+								background: "none",
+								padding: 0,
+								minWidth: 0,
+								display: "block",
+								transition: "color 0.18s ease",
+								"&:hover": {
+									color: "#226c67",
+									background: "none",
+								},
+							}}
+						>
+							{item}
+						</Button>
+					</Box>
 				))}
 			</Box>
+
+
+			<Divider
+				sx={{
+					borderColor: "#133d49",
+					opacity: 0.3,
+					mt: 16,
+					}}
+				/>
 		</Box>
 	);
-};
+}
