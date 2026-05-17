@@ -1,6 +1,27 @@
 import { Box, Button, Divider } from "@mui/material";
 
 export default function Menu() {
+
+	const buttonStyle = {
+		color: "#133d49",
+		fontFamily: "'Bungee', cursive",
+		fontSize: { xs: "4rem", sm: "6rem", md: "8rem" },
+		lineHeight: 0.92,
+		letterSpacing: "-0.01em",
+		textTransform: "none",
+		whiteSpace: "nowrap",
+		background: "none",
+		padding: 0,
+		minWidth: 0,
+		display: "block",
+		transition: "color 0.18s ease",
+
+		"&:hover": {
+			color: "#226c67",
+			background: "none",
+		},
+	};
+
 	return (
 		<Box
 			sx={{
@@ -8,7 +29,7 @@ export default function Menu() {
 				flexDirection: "column",
 				overflow: "hidden",
 				px: { xs: 3, sm: 6, md: 10 },
-				py: { xs: 8, sm: 12, md: 16 },
+				py: { xs: 12, sm: 12, md: 16 },
 			}}
 		>
 			<Box
@@ -19,42 +40,48 @@ export default function Menu() {
 					gap: { xs: 1, sm: 2, md: 3 },
 				}}
 			>
-				{["About", "Projects", "My vision", "Contact"].map((item) => (
-					<Box key={item}>
-						<Button
-							sx={{
-								color: "#133d49",
-								fontFamily: "'Bungee', cursive",
-								fontSize: { xs: "4rem", sm: "6rem", md: "8rem" },
-								lineHeight: 0.92,
-								letterSpacing: "-0.01em",
-								textTransform: "none",
-								whiteSpace: "nowrap",
-								background: "none",
-								padding: 0,
-								minWidth: 0,
-								display: "block",
-								transition: "color 0.18s ease",
-								"&:hover": {
-									color: "#226c67",
-									background: "none",
-								},
-							}}
-						>
-							{item}
-						</Button>
-					</Box>
-				))}
-			</Box>
 
+				<Button
+					component="a"
+					href="#about"
+					sx={buttonStyle}
+				>
+					About
+				</Button>
+
+				<Button
+					component="a"
+					href="#projects"
+					sx={buttonStyle}
+				>
+					Projects
+				</Button>
+
+				<Button
+					component="a"
+					href="#vision"
+					sx={buttonStyle}
+				>
+					My vision
+				</Button>
+
+				<Button
+					component="a"
+					href="#contact"
+					sx={buttonStyle}
+				>
+					Contact
+				</Button>
+
+			</Box>
 
 			<Divider
 				sx={{
 					borderColor: "#133d49",
 					opacity: 0.3,
-					mt: 16,
-					}}
-				/>
+					mt: 12,
+				}}
+			/>
 		</Box>
 	);
 }

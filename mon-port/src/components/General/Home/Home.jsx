@@ -68,7 +68,8 @@ export default function Home() {
 					color: "#000000",
 					mt: 2,
 					fontSize: { xs: 18, sm: 23, md: 27 },
-					maxWidth: 600
+					maxWidth: 600,
+					fontFamily: "Space Mono",
 				}}
 				>
 				Application Developer Student passionate about building modern and intuitive web experiences.
