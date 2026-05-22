@@ -11,7 +11,6 @@ export default function Bouton() {
 			sx={{
 				fontFamily: 'Space Mono',
 				color: '#e3e1cf',
-				fontSize: '1.2rem',
 				padding: '12px 30px',
 				borderRadius: '14px',
 				textTransform: 'none',
