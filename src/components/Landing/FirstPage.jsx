@@ -51,6 +51,7 @@ export default function FirstPage() {
 				}}
 			>
 				<source src={video1} type="video/webm" />
+			</video>
 
 			<Box
 				sx={{
