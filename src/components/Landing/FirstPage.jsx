@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { useRef, useEffect } from 'react';
 import Bouton from './Bouton';
+import video1 from '../../assets/video1.webm';
 
 export default function FirstPage() {
 	const videoRef = useRef(null);
