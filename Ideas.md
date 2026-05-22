@@ -36,3 +36,11 @@ return (
 			}}
 		/>
 ```
+
+
+
+Effets pour les cards des projects : 
+https://freefrontend.com/code/dynamic-article-hover-cursor-2026-02-15/
+
+bouttons : 
+https://freefrontend.com/code/cosmic-3d-galaxy-button-2026-02-28/

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas.md",
+                "file": "SEO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ideas"
+              "title": "SEO"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d100f4b408a096b2",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "couleur.md",
+                "file": "Ideas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour couleur"
+              "title": "Rétrolien pour Ideas"
             }
           },
           {
@@ -184,7 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -200,28 +200,50 @@
   },
   "active": "87fbad55a53cbd3b",
   "lastOpenFiles": [
-    "mon-port/src/assets/PhotoHome.jpg",
-    "mon-port/src/components/Second/Noise.jsx",
-    "mon-port/src/assets/papier2.jpg",
-    "mon-port/src/assets/papier1.jpg",
-    "mon-port/src/components/Second/Menu.jsx",
-    "mon-port/src/components/Welcome/FirstPage.jsx",
-    "mon-port/src/components/Welcome/Bouton.jsx",
-    "mon-port/src/components/Welcome",
-    "mon-port/src/components/Second/Welcome/FirstPage.jsx",
-    "mon-port/src/components/Second/Welcome/Bouton.jsx",
-    "mon-port/src/components/Second/Welcome",
-    "mon-port/README.md",
+    "Sans titre.md",
+    "_config.yml",
+    "SEO.md",
+    "Screenshot from 2026-05-22 15-37-17.png",
+    "Screenshot from 2026-05-22 15-35-02.png",
+    "Screenshot from 2026-05-22 15-24-03.png",
+    "README.md",
+    "Screenshot from 2026-05-21 12-12-48.png",
+    "mon-port/src/components/Landing/FirstPage.jsx",
+    "mon-port/src/components/Landing/Bouton.jsx",
+    "mon-port/src/components/Landing",
+    "mon-port/src/pages/HomePage.jsx",
+    "mon-port/src/pages/LandingPage.jsx",
     "Ideas.md",
-    "mon-port/src/assets/video2.webm",
-    "mon-port/src/assets/video.webm",
-    "mon-port/src/assets/Picv2.png",
-    "mon-port/src/assets/Picv.png",
-    "mon-port/src/assets/moi.png",
-    "mon-port/src/assets/mer3.png",
-    "mon-port/src/assets/mer2.jpeg",
-    "mon-port/src/assets/mer1.jpeg",
-    "mon-port/src/assets/mer.jpeg",
-    "mon-port/src/assets/etoile.png"
+    "mon-port/node_modules/prettier/standalone.d.ts",
+    "mon-port/node_modules/prettier/index.d.ts",
+    "mon-port/node_modules/prettier/doc.d.ts",
+    "mon-port/node_modules/prettier/standalone.mjs",
+    "mon-port/node_modules/prettier/THIRD-PARTY-NOTICES.md",
+    "mon-port/node_modules/prettier/README.md",
+    "mon-port/node_modules/css-tree/README.md",
+    "mon-port/node_modules/table/node_modules/ajv/README.md",
+    "mon-port/node_modules/@cacheable/memory/README.md",
+    "mon-port/node_modules/table/README.md",
+    "mon-port/node_modules/mdn-data/README.md",
+    "mon-port/node_modules/postcss-selector-parser/README.md",
+    "mon-port/node_modules/postcss-selector-parser/CHANGELOG.md",
+    "mon-port/node_modules/postcss-selector-parser/API.md",
+    "mon-port/node_modules/fast-glob/README.md",
+    "mon-port/node_modules/fast-uri/README.md",
+    "mon-port/node_modules/qified/node_modules/hookified/README.md",
+    "mon-port/node_modules/meow/readme.md",
+    "mon-port/node_modules/signal-exit/README.md",
+    "mon-port/node_modules/hashery/README.md",
+    "mon-port/node_modules/hookified/README.md",
+    "mon-port/node_modules/@nodelib/fs.walk/README.md",
+    "mon-port/node_modules/@csstools/css-syntax-patches-for-csstree/README.md",
+    "mon-port/node_modules/stylelint/node_modules/cosmiconfig/README.md",
+    "mon-port/node_modules/colord/README.md",
+    "mon-port/src/assets/PhotoHome6.jpg",
+    "mon-port/src/assets/PhotoHome5.jpg",
+    "mon-port/src/components/General/Name/mer4.jpeg",
+    "mon-port/src/assets/PhotoVision.jpg",
+    "mon-port/src/assets/Vision.jpg",
+    "mon-port/src/assets/PhotoHome4.jpg"
   ]
 }
